@@ -1,0 +1,15 @@
+C:\programming\csharp\AudioSlicer\AddToRegistry\bin\Release\net5.0\AddToRegistry.exe
+C:\programming\csharp\AudioSlicer\AddToRegistry\bin\Release\net5.0\AddToRegistry.deps.json
+C:\programming\csharp\AudioSlicer\AddToRegistry\bin\Release\net5.0\AddToRegistry.runtimeconfig.json
+C:\programming\csharp\AudioSlicer\AddToRegistry\bin\Release\net5.0\AddToRegistry.runtimeconfig.dev.json
+C:\programming\csharp\AudioSlicer\AddToRegistry\bin\Release\net5.0\AddToRegistry.dll
+C:\programming\csharp\AudioSlicer\AddToRegistry\bin\Release\net5.0\ref\AddToRegistry.dll
+C:\programming\csharp\AudioSlicer\AddToRegistry\bin\Release\net5.0\AddToRegistry.pdb
+C:\programming\csharp\AudioSlicer\AddToRegistry\obj\Release\net5.0\AddToRegistry.GeneratedMSBuildEditorConfig.editorconfig
+C:\programming\csharp\AudioSlicer\AddToRegistry\obj\Release\net5.0\AddToRegistry.AssemblyInfoInputs.cache
+C:\programming\csharp\AudioSlicer\AddToRegistry\obj\Release\net5.0\AddToRegistry.AssemblyInfo.cs
+C:\programming\csharp\AudioSlicer\AddToRegistry\obj\Release\net5.0\AddToRegistry.csproj.CoreCompileInputs.cache
+C:\programming\csharp\AudioSlicer\AddToRegistry\obj\Release\net5.0\AddToRegistry.dll
+C:\programming\csharp\AudioSlicer\AddToRegistry\obj\Release\net5.0\ref\AddToRegistry.dll
+C:\programming\csharp\AudioSlicer\AddToRegistry\obj\Release\net5.0\AddToRegistry.pdb
+C:\programming\csharp\AudioSlicer\AddToRegistry\obj\Release\net5.0\AddToRegistry.genruntimeconfig.cache
