@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Destination" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\bookcut</Value>
+      <Value Profile="(Default)">\\Vault\protected\audio\audiobooks\bookcut</Value>
     </Setting>
   </Settings>
 </SettingsFile>

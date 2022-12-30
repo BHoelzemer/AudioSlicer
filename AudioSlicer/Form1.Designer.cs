@@ -38,6 +38,8 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.label4 = new System.Windows.Forms.Label();
             this.Subfolder = new System.Windows.Forms.CheckBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,16 +78,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(324, 63);
+            this.label2.Location = new System.Drawing.Point(321, 61);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 20);
+            this.label2.Size = new System.Drawing.Size(139, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Destination";
+            this.label2.Text = "Destination Folder";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(26, 100);
+            this.button1.Location = new System.Drawing.Point(26, 160);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 35);
@@ -96,7 +98,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(147, 98);
+            this.progressBar1.Location = new System.Drawing.Point(147, 158);
             this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(150, 35);
@@ -115,7 +117,7 @@
             // trackBar1
             // 
             this.trackBar1.BackColor = System.Drawing.SystemColors.Control;
-            this.trackBar1.Location = new System.Drawing.Point(18, 145);
+            this.trackBar1.Location = new System.Drawing.Point(18, 205);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.trackBar1.Maximum = 20;
             this.trackBar1.Minimum = 1;
@@ -128,7 +130,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(183, 145);
+            this.label4.Location = new System.Drawing.Point(183, 205);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(18, 20);
@@ -140,7 +142,7 @@
             this.Subfolder.AutoSize = true;
             this.Subfolder.Checked = true;
             this.Subfolder.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Subfolder.Location = new System.Drawing.Point(213, 145);
+            this.Subfolder.Location = new System.Drawing.Point(213, 205);
             this.Subfolder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Subfolder.Name = "Subfolder";
             this.Subfolder.Size = new System.Drawing.Size(134, 24);
@@ -148,12 +150,33 @@
             this.Subfolder.Text = "To Subfolders";
             this.Subfolder.UseVisualStyleBackColor = true;
             // 
+            // textBox3
+            // 
+            this.textBox3.AllowDrop = true;
+            this.textBox3.Location = new System.Drawing.Point(18, 94);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(295, 26);
+            this.textBox3.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(321, 97);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(136, 20);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Destination Name";
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 291);
+            this.ClientSize = new System.Drawing.Size(476, 291);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.Subfolder);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.trackBar1);
@@ -187,6 +210,8 @@
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox Subfolder;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label3;
     }
 }
 

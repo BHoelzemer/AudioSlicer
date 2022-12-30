@@ -49,12 +49,12 @@ namespace AudioSlicer
                     else
                     {
                         var extension = Path.GetExtension(item);
-                        if (extension == ".m4b")
-                        {
-                            var target = $@"{Path.GetFileNameWithoutExtension(item)}.mp3";
-                            M4A2MP3.Convert(item, target);
-                            mp3Files.Add(target);
-                        }
+                        //if (extension == ".m4b")
+                        //{
+                        //    var target = $@"{Path.GetFileNameWithoutExtension(item)}.mp3";
+                        //    M4A2MP3.Convert(item, target);
+                        //    mp3Files.Add(target);
+                        //}
                         else if (extension == ".mp3")
                         {
                             mp3Files.Add(item);
@@ -107,7 +107,7 @@ namespace AudioSlicer
             };
 
 
-            audio.Start(mp3Files, textBox2.Text, interval, Subfolder.Checked);
+            audio.Start(mp3Files, $"{textBox2.Text}\\{textBox3.Text}", interval, Subfolder.Checked);
         }
 
         private void Form1_DragEnter(object sender, DragEventArgs e)

@@ -25,7 +25,7 @@ namespace AudioSlicer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\bookcut")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\\\Vault\\protected\\audio\\audiobooks\\bookcut")]
         public string Destination {
             get {
                 return ((string)(this["Destination"]));
