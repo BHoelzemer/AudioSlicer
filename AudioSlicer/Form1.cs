@@ -49,12 +49,12 @@ namespace AudioSlicer
                     else
                     {
                         var extension = Path.GetExtension(item);
-                        //if (extension == ".m4b")
-                        //{
-                        //    var target = $@"{Path.GetFileNameWithoutExtension(item)}.mp3";
-                        //    M4A2MP3.Convert(item, target);
-                        //    mp3Files.Add(target);
-                        //}
+                        if (extension == ".m4b")
+                        {
+                            var target = $@"{Path.GetFileNameWithoutExtension(item)}.mp3";
+                            M4A2ToMP3Converter.Convert(item, target);
+                            mp3Files.Add(target);
+                        }
                         else if (extension == ".mp3")
                         {
                             mp3Files.Add(item);
