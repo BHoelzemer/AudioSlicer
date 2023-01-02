@@ -10,6 +10,7 @@ namespace AudioSlicer
     public partial class Form1 : Form
     {
         List<string> mp3Files = new List<string>();
+        List<string> m4bFiles = new List<string>();
         int interval = 1;
         public Form1()
         {
@@ -51,9 +52,8 @@ namespace AudioSlicer
                         var extension = Path.GetExtension(item);
                         if (extension == ".m4b")
                         {
-                            var target = $@"{Path.GetFileNameWithoutExtension(item)}.mp3";
-                            M4A2ToMP3Converter.Convert(item, target);
-                            mp3Files.Add(target);
+                            m4bFiles.Add(item);
+
                         }
                         else if (extension == ".mp3")
                         {
@@ -105,6 +105,13 @@ namespace AudioSlicer
                 });
 
             };
+
+            foreach (var item in m4bFiles)
+            {
+                var target = $@"{Path.GetFileNameWithoutExtension(item)}.mp3";
+                M4A2ToMP3Converter.Convert(item, target);
+                mp3Files.Add(target);
+            }
 
 
             audio.Start(mp3Files, $"{textBox2.Text}\\{textBox3.Text}", interval, Subfolder.Checked);
