@@ -108,6 +108,10 @@ namespace AudioSlicer
 
             foreach (var item in m4bFiles)
             {
+                labelInfo.InvokeIfRequired(() =>
+                {
+                    labelInfo.Text = "start to transform m4b file";
+                });
                 var target = $@"{Path.GetFileNameWithoutExtension(item)}.mp3";
                 M4A2ToMP3Converter.Convert(item, target);
                 mp3Files.Add(target);
