@@ -9,26 +9,24 @@ namespace AudioSlicer
 {
     public static class M4A2ToMP3Converter
     {
-        public static void Convert(string fromPath, string toPath)
+        public static void Convert(string sourceFileName, string targetFileName)
         {
-            int lastIndex = fromPath.Contains("\\") ? fromPath.LastIndexOf('\\') : 0;
-            string tempFileName = Environment.CurrentDirectory + "\\temp\\" + fromPath.Substring(lastIndex);
             
-            if(File.Exists(tempFileName))
+            if(File.Exists(targetFileName))
             {
-                File.Delete(tempFileName);
+                File.Delete(targetFileName);
             }
-            if(!Directory.GetParent(tempFileName).Exists)
+            if(!Directory.GetParent(targetFileName).Exists)
             {
-                Directory.GetParent(tempFileName).Create();
+                Directory.GetParent(targetFileName).Create();
             }
 
-            Interaction.Shell($"faad.exe -o \"{tempFileName}\" \"{fromPath}\"", 
+            Interaction.Shell($"faad.exe -o \"{targetFileName}\" \"{sourceFileName}\"", 
                 AppWinStyle.Hide, true, -1);
-            Interaction.Shell($"lame.exe --preset standard \"{tempFileName}\" \"{toPath}\"",
+            Interaction.Shell($"lame.exe --preset standard \"{targetFileName}\" \"{targetFileName}\"",
                 AppWinStyle.Hide, true, -1);
 
-            File.Delete(tempFileName);
+            File.Delete(targetFileName);
         }
     }
 }
