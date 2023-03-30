@@ -48,6 +48,7 @@ namespace AudioSlicer
             {
                 try
                 {
+                    OnInfoEvent.Invoke(this, "started");
                     this.interval = interval * 60;
                     mp3Files.Sort(new CustomComparer());
                     destinationPath = destinationFolder;

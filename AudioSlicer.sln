@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29025.244
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioSlicer", "AudioSlicer\AudioSlicer.csproj", "{659EE6C4-8B25-4B5A-BB72-F0D9889D3FEA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioSlicerLibrary", "AudioSlicerLibrary\AudioSlicerLibrary.csproj", "{8A6FCBD7-ABA1-44C8-ADAD-3CBB93F45D3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddToRegistry", "AddToRegistry\AddToRegistry.csproj", "{896D28DF-7245-4389-8FB0-D4571F24F325}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddToRegistry", "AddToRegistry\AddToRegistry.csproj", "{896D28DF-7245-4389-8FB0-D4571F24F325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioSlicerMulti", "AudioSlicerMulti\AudioSlicerMulti.csproj", "{AB2B10C5-A56B-440A-A2F6-5A437DB452F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,12 @@ Global
 		{896D28DF-7245-4389-8FB0-D4571F24F325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{896D28DF-7245-4389-8FB0-D4571F24F325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{896D28DF-7245-4389-8FB0-D4571F24F325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2B10C5-A56B-440A-A2F6-5A437DB452F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2B10C5-A56B-440A-A2F6-5A437DB452F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2B10C5-A56B-440A-A2F6-5A437DB452F6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AB2B10C5-A56B-440A-A2F6-5A437DB452F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2B10C5-A56B-440A-A2F6-5A437DB452F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2B10C5-A56B-440A-A2F6-5A437DB452F6}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
